@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
         highlightColor: Colors.transparent,
         splashFactory: NoSplash.splashFactory,
         primaryColor: Color(0xFF5CE9CD),
-        textTheme: GoogleFonts.interTextTheme(),
+        textTheme: GoogleFonts.poppinsTextTheme(),
       ),
     );
   }
