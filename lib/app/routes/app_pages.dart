@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:goodluv/app/modules/auth/views/login_screen.dart';
+import 'package:goodluv/app/modules/auth/views/otp_screen.dart';
 import 'package:goodluv/app/modules/auth/views/signup_screen.dart';
 import 'package:goodluv/app/modules/onboarding/views/onboarding_screen.dart';
 import 'package:goodluv/app/modules/splash/views/splash_screen.dart';
@@ -22,6 +23,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.login,
       page: () => LoginScreen(),
+    ),
+    GetPage(
+      name: AppRoutes.otpscreen,
+      page: () => OtpVerifyScreen(),
     ),
   ];
 }

@@ -17,6 +17,7 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        
         width: Get.width,
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         decoration: bgGradientWidget(),
@@ -49,7 +50,7 @@ class SignUpScreen extends StatelessWidget {
             buildSignUpFormFields(formKey: formKey),
             SizedBox(height: Get.height * 0.06),
             CustomButton(
-              ontap: () {},
+              ontap: () => Get.toNamed(AppRoutes.otpscreen),
               isLoading: false.obs,
               child: Text(
                 "Sign Up",
