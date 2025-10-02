@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:goodluv/app/resources/colors.dart';
+import 'package:goodluv/app/routes/app_routes.dart';
 import 'package:goodluv/app/widgets/bg_gradient_widget.dart';
 import 'package:goodluv/app/widgets/custom_button.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -59,7 +60,7 @@ class FaceVerificationScreen extends StatelessWidget {
             ),
             SizedBox(height: Get.height * 0.02),
             CustomButton(
-              ontap: () {},
+              ontap: () => Get.toNamed(AppRoutes.home),
               isLoading: false.obs,
               child: Text(
                 'Proceed',

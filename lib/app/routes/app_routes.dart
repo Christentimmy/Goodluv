@@ -9,4 +9,5 @@ class AppRoutes {
   static const String resetpassword = '/resetpassword';
   static const String termsandcondition = '/termsandcondition';
   static const String faceverification = '/faceverification';
+  static const String home = '/home';
 }
