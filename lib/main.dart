@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
       initialRoute: AppRoutes.splash,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
+     defaultTransition: Transition.fadeIn, 
       theme: ThemeData(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,

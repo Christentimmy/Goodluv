@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:goodluv/app/modules/auth/widgets/signup_widgets.dart';
+import 'package:goodluv/app/modules/auth/widgets/login_widget.dart';
 import 'package:goodluv/app/resources/colors.dart';
 import 'package:goodluv/app/routes/app_routes.dart';
 import 'package:goodluv/app/widgets/bg_gradient_widget.dart';
 import 'package:goodluv/app/widgets/custom_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignUpScreen extends StatelessWidget {
-  SignUpScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  LoginScreen({super.key});
 
   final formKey = GlobalKey<FormState>();
 
@@ -27,7 +27,7 @@ class SignUpScreen extends StatelessWidget {
             SizedBox(height: Get.height * 0.007),
             Center(
               child: Text(
-                "Create Account",
+                "Welcome Back",
                 style: GoogleFonts.poppins(
                   color: Colors.white,
                   fontSize: 18,
@@ -46,13 +46,13 @@ class SignUpScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: Get.height * 0.06),
-            buildSignUpFormFields(formKey: formKey),
+            buildLoginFormFields(formKey: formKey),
             SizedBox(height: Get.height * 0.06),
             CustomButton(
               ontap: () {},
               isLoading: false.obs,
               child: Text(
-                "Sign Up",
+                "Login",
                 style: GoogleFonts.fredoka(
                   color: Colors.white,
                   fontSize: 15,
@@ -105,7 +105,7 @@ class SignUpScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Already have an account?",
+                  "Don't have an account?",
                   style: GoogleFonts.fredoka(
                     color: Colors.white,
                     fontSize: 15,
@@ -113,9 +113,9 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () => Get.toNamed(AppRoutes.login),
+                  onPressed: () => Get.toNamed(AppRoutes.signup),
                   child: Text(
-                    "Login",
+                    "Sign Up",
                     style: GoogleFonts.fredoka(
                       color: AppColors.primaryColor,
                       fontSize: 15,
