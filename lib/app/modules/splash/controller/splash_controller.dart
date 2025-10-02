@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:goodluv/app/routes/app_routes.dart';
 
 class SplashController extends GetxController with GetTickerProviderStateMixin {
   late AnimationController controller;
@@ -10,6 +11,12 @@ class SplashController extends GetxController with GetTickerProviderStateMixin {
   void onInit() {
     super.onInit();
     initializeAnimations();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   void initializeAnimations() {
@@ -50,7 +57,7 @@ class SplashController extends GetxController with GetTickerProviderStateMixin {
       //   Get.offAllNamed(AppRoutes.login);
       //   return;
       // }
-      // Get.toNamed(AppRoutes.welcome);
+      Get.offNamed(AppRoutes.onboarding);
     });
   }
 }
