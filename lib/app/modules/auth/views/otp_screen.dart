@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:goodluv/app/controller/timer_controller.dart';
 import 'package:goodluv/app/resources/colors.dart';
+import 'package:goodluv/app/routes/app_routes.dart';
 import 'package:goodluv/app/widgets/bg_gradient_widget.dart';
 import 'package:goodluv/app/widgets/custom_button.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -69,14 +70,14 @@ class _OtpVerifyScreenState extends State<OtpVerifyScreen> {
                 submittedPinTheme: submittedPinTheme(),
                 focusedPinTheme: focusedPinTheme(),
                 defaultPinTheme: defaultPinTheme(),
-                // onCompleted: (value) => Get.toNamed(AppRoutes.updateName),
+                onCompleted: (value) => Get.toNamed(AppRoutes.termsandcondition),
               ),
             ),
             SizedBox(height: Get.height * 0.02),
             resendOtpRow(),
             const Spacer(),
             CustomButton(
-              ontap: () {},
+              ontap: () => Get.toNamed(AppRoutes.termsandcondition),
               isLoading: false.obs,
               child: Text(
                 "Submit",

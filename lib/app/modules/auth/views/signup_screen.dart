@@ -17,7 +17,6 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        
         width: Get.width,
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         decoration: bgGradientWidget(),

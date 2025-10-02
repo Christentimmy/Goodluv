@@ -7,4 +7,5 @@ class AppRoutes {
   static const String login = '/login';
   static const String otpscreen = '/otpscreen';
   static const String resetpassword = '/resetpassword';
+  static const String termsandcondition = '/termsandcondition';
 }
