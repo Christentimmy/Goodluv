@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:goodluv/app/modules/auth/views/signup_screen.dart';
 import 'package:goodluv/app/modules/onboarding/views/onboarding_screen.dart';
 import 'package:goodluv/app/modules/splash/views/splash_screen.dart';
 import 'package:goodluv/app/routes/app_routes.dart';
@@ -12,6 +13,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.onboarding,
       page: () => OnboardingScreen(),
+    ),
+    GetPage(
+      name: AppRoutes.signup,
+      page: () => SignUpScreen(),
     ),
   ];
 }

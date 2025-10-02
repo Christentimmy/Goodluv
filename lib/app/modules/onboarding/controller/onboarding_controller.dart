@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:goodluv/app/modules/onboarding/model/onboarding_model.dart';
+import 'package:goodluv/app/routes/app_routes.dart';
 
 class OnboardingController extends GetxController {
  
@@ -36,7 +37,7 @@ class OnboardingController extends GetxController {
   }
 
   void skip() {
-    // Get.offNamed(AppRoutes.login);
+    Get.offNamed(AppRoutes.signup);
   }
 
   void nextPage() {
@@ -46,7 +47,7 @@ class OnboardingController extends GetxController {
         curve: Curves.easeInOut,
       );
     } else {
-      // Get.offNamed(AppRoutes.login);
+      Get.offNamed(AppRoutes.signup);
     }
   }
 }

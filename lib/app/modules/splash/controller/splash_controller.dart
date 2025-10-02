@@ -14,9 +14,9 @@ class SplashController extends GetxController with GetTickerProviderStateMixin {
   }
 
   @override
-  void dispose() {
+  void onClose() {
     controller.dispose();
-    super.dispose();
+    super.onClose();
   }
 
   void initializeAnimations() {

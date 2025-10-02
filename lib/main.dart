@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:goodluv/app/resources/colors.dart';
 import 'package:goodluv/app/routes/app_pages.dart';
 import 'package:goodluv/app/routes/app_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,6 +24,10 @@ class MainApp extends StatelessWidget {
         highlightColor: Colors.transparent,
         splashFactory: NoSplash.splashFactory,
         primaryColor: Color(0xFF5CE9CD),
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: AppColors.primaryColor,
+          selectionHandleColor: AppColors.primaryColor,
+        ),
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),
     );
