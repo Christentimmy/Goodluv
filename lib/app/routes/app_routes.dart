@@ -8,4 +8,5 @@ class AppRoutes {
   static const String otpscreen = '/otpscreen';
   static const String resetpassword = '/resetpassword';
   static const String termsandcondition = '/termsandcondition';
+  static const String faceverification = '/faceverification';
 }

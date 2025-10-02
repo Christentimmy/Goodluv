@@ -6,6 +6,7 @@ import 'package:goodluv/app/modules/auth/views/signup_screen.dart';
 import 'package:goodluv/app/modules/onboarding/views/onboarding_screen.dart';
 import 'package:goodluv/app/modules/policy/views/terms_and_condition_screen.dart';
 import 'package:goodluv/app/modules/splash/views/splash_screen.dart';
+import 'package:goodluv/app/modules/verification/views/face_verification_screen.dart';
 import 'package:goodluv/app/routes/app_routes.dart';
 
 class AppPages {
@@ -37,6 +38,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.termsandcondition,
       page: () => TermsAndConditionScreen(),
+    ),
+    GetPage(
+      name: AppRoutes.faceverification,
+      page: () => FaceVerificationScreen(),
     ),
   ];
 }
